@@ -7,14 +7,9 @@ scope = int(os.getenv("SCOPE"))
 
 
 
-class Tag(interactions.Extension):
-	def __init__(self, bot):
-		self.bot = bot
-		wait_for.setup(bot, add_method=True)
 
 
-
-class Test(interactions.Extension):
+class Get_method(interactions.Extension):
 	def __init__(self, bot):
 		self.bot = bot
 
@@ -84,4 +79,4 @@ class Test(interactions.Extension):
 
 
 def setup(bot):
-	Test(bot)
+	Get_method(bot)
